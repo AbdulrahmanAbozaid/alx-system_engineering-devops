@@ -1,0 +1,7 @@
+#!/bin/bash
+file="hello"
+current_owner=$(stat -c '%U' "$file")
+if [ "$current_owner" == "guillaume" ]; then
+    chown betty "$file"
+fi
+
