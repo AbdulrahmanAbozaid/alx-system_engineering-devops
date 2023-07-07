@@ -1,6 +1,5 @@
 #!/bin/bash
-echo "Enter Commit Messge"
-read msg
+echo "Uploading..."
 git add .
-git commit -m "${msg}"
+git commit -m "new Script"
 git push
