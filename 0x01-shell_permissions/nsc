@@ -3,4 +3,5 @@ echo "enter file name"
 read name
 touch $name
 chmod +x $name
+echo "#!/bin/bash" > $name
 vi $name
