@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Uploading..."
+git add .
+git commit -m "new Script"
+git push
