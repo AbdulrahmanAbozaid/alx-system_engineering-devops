@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -l | cut -c 41- | grep . | awk 'NR % 2 == 1'
