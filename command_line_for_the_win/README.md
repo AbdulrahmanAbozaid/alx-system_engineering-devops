@@ -4,7 +4,7 @@
 
 ```bash
 sftp myusername@mysandboxhost
-    # then putting the passord of the sandbox
+    # then putting the password of the sandbox
 ls
 cd root
 mkdir alx-system_engineering-devops
