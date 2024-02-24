@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+FILE="$1"
+MSG="$2"
+
+if [ -e "$FILE" ]; then
+	echo "File exists"
+	exit 1
+fi
+if [ -z "$FILE" ]; then
+        echo "File Name needed"
+        exit 1
+fi
+if [ -z "$MSG" ]; then
+	MSG="Committing change"
+fi
+
+printf "#!/usr/bin/env bash\n# For: %s\n" "$MSG" >> "$FILE"
