@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+trap "echo ctrl+c a script" SIGINT
+while [[ true ]] ; do
+	sleep 1
+done
