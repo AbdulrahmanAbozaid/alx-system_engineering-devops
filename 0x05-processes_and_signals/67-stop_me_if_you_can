@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# For: sto
+pkill -2 "bash ./7-highlander" -f
