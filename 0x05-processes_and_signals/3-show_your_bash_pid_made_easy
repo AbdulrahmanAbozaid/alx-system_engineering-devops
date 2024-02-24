@@ -1,8 +1,3 @@
 #!/usr/bin/env bash
 # For: check
-FILES=$(ls /proc)
-for f in $FILES
-do
-    head "/proc/$f/status"
-    echo "===================="
-done
+pgrep -l bash
