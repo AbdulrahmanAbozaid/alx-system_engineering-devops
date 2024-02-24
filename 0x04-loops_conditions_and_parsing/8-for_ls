@@ -2,5 +2,5 @@
 # For ls task implmentation
 LIST="$(ls)"
 for i in $LIST; do
-	echo $i | cut -d "-" -f2
+	echo "$i" | cut -d "-" -f2
 done
