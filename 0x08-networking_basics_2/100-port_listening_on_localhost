@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# for 98 Port Listen
+nc -l 98
