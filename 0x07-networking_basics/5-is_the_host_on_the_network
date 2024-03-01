@@ -6,4 +6,4 @@ if [ -z "$IP" ]; then
 	exit
 fi
 
-ping -c 5 $1
+ping -c 5 "$1"
