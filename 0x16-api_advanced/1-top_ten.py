@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Top Ten"""
 
-from email import header
 import requests
 
 
