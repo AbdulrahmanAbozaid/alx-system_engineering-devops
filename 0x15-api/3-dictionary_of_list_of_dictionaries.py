@@ -14,7 +14,7 @@ def get_employees_progress():
 
         """Getting Users"""
         users = {}
-        json_filename = "todo_all_employees.json.json"
+        json_filename = "todo_all_employees.json"
 
         for user in emps_data:
             emp_id = user["id"]
