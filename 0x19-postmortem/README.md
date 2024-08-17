@@ -1,4 +1,5 @@
 # Postmortem: Apache 500 Internal Server Error on WordPress Site
+![Resolution](./OutageResolve.webp)
 ## Issue Summary
 Duration: 2024-08-16, 10:00 AM UTC - 11:15 AM UTC (1 hour 15 minutes)
 
@@ -22,6 +23,28 @@ Root Cause: The issue was caused by a typo in the wp-settings.php file, where .p
 
 ## Resolution:
 The issue was resolved by creating a Puppet script that automatically corrected the typo by replacing .phpp with .php in the affected file. The script was executed successfully, and the website was restored to full functionality.
+
+## A Visual Representation (Because Diagrams Make Everything Better)
+```scss
+     _______
+    |       |      (All is well)
+    | .php  |      |
+    |_______|
+         |
+         | (Oops, a wild typo!)
+         V
+     _______
+    |       |      (All is chaos)
+    | .phpp |      |
+    |_______|
+         |
+         | (Enter Puppet script)
+         V
+     _______
+    |       |      (All is well again)
+    | .php  |      |
+    |_______|
+```
 
 ## Corrective and Preventative Measures
 ### Improvements:
