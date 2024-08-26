@@ -1,3 +1,5 @@
+# increase the Limit for Holberton open files
+
 exec { 'increase-hard-file-limit-holberton-user':
   command => 'sed -i "/holberton hard/s/4/50000/" /etc/security/limits.conf',
   path    => '/usr/local/bin/:/bin/'
